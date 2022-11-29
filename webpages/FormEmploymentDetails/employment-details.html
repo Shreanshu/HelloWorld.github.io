@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style_employment.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="info-section">
+            <div class="background-container">
+                <img src="./assets/images/Form-Background.jpg" alt="Background Image" class="background">
+            </div>
+
+            <div class="company-details">
+
+                <h1 class="company-name">
+                    Hello World
+                    <br>
+                    <span>
+                        Solutions
+                    </span>
+                </h1>
+
+                <h3 class="company-tag">
+                    We are the most Professional
+                    <br> 
+                    <span>Business Solutions</span>
+                </h3>
+
+                <div class="buttons">
+                    <a href="https://in.linkedin.com/" target="_blank" class="url" id="linkedin-url">
+                        <img src="./assets/icons/LinkedIn-Logo-White.png" alt="LinkedIn Logo">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="url" id="facebook-url">
+                        <img src="./assets/icons/Facebook-Logo-White.png" alt="Facebook Logo">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="url" id="twitter-url">
+                        <img src="./assets/icons/Twitter-Logo-White.png" alt="Twitter Logo">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="url" id="instagram-url">
+                        <img src="./assets/icons/Instagram-Logo-White.png" alt="Instagram Logo">
+                    </a>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="details-section">
+
+            <nav class="navigation">
+                <ul class="illustrations">
+                    <li class="icon" id="personal">
+                        <a href="../FormPersonalDetails/personal-details.html">
+                            <img src="./assets/icons/person-icon.jpg" alt="Personal Details">
+                        </a>
+                    </li>
+                    <li class="icon" id="family">
+                        <a href="../FormFamilyDetails/family-details.html">
+                            <img src="./assets/icons/family-icon.jpg" alt="Family Details">
+                        </a>
+                    </li>
+                    <li class="icon" id="educational">
+                        <a href="../FormEducationalDetails/educational-details.html">
+                            <img src="./assets/icons/education-icon.jpg" alt="Educational Details">
+                        </a>
+                    </li>
+                    <li class="icon" id="employment">
+                        <a href="#">
+                            <img src="./assets/icons/employee-icon.jpg" alt="Employment Details">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <li class="list-items" id="personal">
+                        <a href="../FormPersonalDetails/personal-details.html">
+                            Personal Details
+                        </a>
+                    </li>
+                    <li class="list-items" id="family">
+                        <a href="../FormFamilyDetails/family-details.html">
+                            Family Details
+                        </a>
+                    </li>
+                    <li class="list-items" id="educational">
+                        <a href="../FormEducationalDetails/educational-details.html">
+                            Educational Details
+                        </a>
+                    </li>
+                    <li class="list-items" id="employment">
+                        <a href="#">
+                            Employment Details
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form action="../SubmissionPage/submission-page.html" method="#" class="form-container">
+
+                <fieldset id="employee-details" class="fieldset">
+
+                    <legend>
+                        Employee Details
+                    </legend>
+
+                    <div id="job-role-container" class="container">
+                        <label for="job-role" class="label">
+                             Desired Position 
+                        </label>
+                        <select name="job-role" class="input" id="job-role" required>
+                            <option value="" class="option">---select---</option>
+                            <option value="frontend-developer" class="option">Frontend Developer</option>
+                            <option value="backend-developer" class="option">Backend Developer</option>
+                            <option value="fullstack-developer" class="option">Fullstack Developer</option>
+                            <option value="ui-ux-designer" class="option">UI UX Designer</option>
+                        </select>
+                    </div>
+
+                    <div id="skills-container" class="container">
+                        <label for="skills" class="label">
+                            Skills and Certifications
+                        </label>
+                        <textarea name="skills" class="input" id="skills" cols="50" rows="5" placeholder="Type here..." required></textarea>
+                    </div>
+
+                    <div id="resume-container" class="container">
+                        <label for="resume" class="label">
+                            Upload your resume
+                        </label>
+                        <input type="file" name="resume" class="input" id="resume" accept=".pdf,.doc" required>
+                    </div>
+
+                    <label for="reference" class="label">
+                        How you were referred to us?
+                    </label>
+                    <div id="reference-container" class="container">
+                        <label for="newspaper" class="label-many">
+                            <input type="checkbox" name="reference" class="input-many" id="newspaper" value="Newspaper">
+                            Newspaper
+                        </label>
+                        <label for="social-media" class="label-many">
+                            <input type="checkbox" name="reference" class="input-many" id="social-media" value="Social Media">
+                            Social Media
+                        </label>
+                        <label for="advertisement" class="label-many">
+                            <input type="checkbox" name="reference" class="input-many" id="advertisement" value="Advertisement">
+                            Advertisement
+                        </label>
+                        <label for="referal" class="label-many">
+                            <input type="checkbox" name="reference" class="input-many" id="referal" value="Referal">
+                            Referal
+                        </label>
+                    </div>
+
+                </fieldset>
+
+                <fieldset id="employment-history" class="fieldset">
+
+                    <legend>
+                         Employment History  
+                    </legend>
+
+                    <div id="company-container" class="container">
+                        <label for="company" class="label">
+                            Company
+                        </label>
+                        <input type="text" name="company" class="input" id="company" maxlength="50" >
+                    </div>
+
+                    <div id="position-container" class="container">
+                        <label for="position" class="label">
+                            Position
+                        </label>
+                        <input type="text" name="position" class="input" id="position" maxlength="50" >
+                    </div>
+
+                    <div id="responsibilities-container" class="container">
+                        <label for="responsibilities" class="label">
+                            Responsibilities
+                        </label>
+                        <textarea name="responsibilities" class="input" id="responsibilities" cols="50" rows="5" placeholder="Type here..." ></textarea>
+                    </div>
+
+                </fieldset>
+
+                <a href="../SubmissionPage/submission-page.html" class="submit-url">
+                    <button type="submit" class="submit-button">
+                        Submit Application
+                    </button>
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style_personal.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="info-section">
+            <div class="background-container">
+                <img src="./assets/images/Form-Background.jpg" alt="Background Image" class="background">
+            </div>
+
+            <div class="company-details">
+
+                <h1 class="company-name">
+                    Hello World
+                    <br>
+                    <span>
+                        Solutions
+                    </span>
+                </h1>
+
+                <h3 class="company-tag">
+                    We are the most Professional
+                    <br> 
+                    <span>Business Solutions</span>
+                </h3>
+
+                <div class="buttons">
+                    <a href="https://in.linkedin.com/" target="_blank" class="url" id="linkedin-url">
+                        <img src="./assets/icons/LinkedIn-Logo-White.png" alt="LinkedIn Logo">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="url" id="facebook-url">
+                        <img src="./assets/icons/Facebook-Logo-White.png" alt="Facebook Logo">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="url" id="twitter-url">
+                        <img src="./assets/icons/Twitter-Logo-White.png" alt="Twitter Logo">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="url" id="instagram-url">
+                        <img src="./assets/icons/Instagram-Logo-White.png" alt="Instagram Logo">
+                    </a>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="details-section">
+
+            <nav class="navigation">
+                <ul class="illustrations">
+                    <li class="icon" id="personal">
+                        <a href="#">
+                            <img src="./assets/icons/person-icon.jpg" alt="Personal Details">
+                        </a>
+                    </li>
+                    <li class="icon" id="family">
+                        <a href="../FormFamilyDetails/family-details.html">
+                            <img src="./assets/icons/family-icon.jpg" alt="Family Details">
+                        </a>
+                    </li>
+                    <li class="icon" id="educational">
+                        <a href="../FormEducationalDetails/educational-details.html">
+                            <img src="./assets/icons/education-icon.jpg" alt="Educational Details">
+                        </a>
+                    </li>
+                    <li class="icon" id="employment">
+                        <a href="../FormEmploymentDetails/employment-details.html">
+                            <img src="./assets/icons/employee-icon.jpg" alt="Employment Details">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <li class="list-items" id="personal">
+                        <a href="#">
+                            Personal Details
+                        </a>
+                    </li>
+                    <li class="list-items" id="family">
+                        <a href="../FormFamilyDetails/family-details.html">
+                            Family Details
+                        </a>
+                    </li>
+                    <li class="list-items" id="educational">
+                        <a href="../FormEducationalDetails/educational-details.html">
+                            Educational Details
+                        </a>
+                    </li>
+                    <li class="list-items" id="employment">
+                        <a href="../FormEmploymentDetails/employment-details.html">
+                            Employment Details
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form action="../FormFamilyDetails/family-details.html" method="#" class="form-container">
+
+                <fieldset id="personal-details" class="fieldset">
+
+                    <legend>
+                         Personal Details 
+                    </legend>
+
+                    <div id="first-name-container" class="container">
+                        <label for="first-name" class="label">
+                            First Name
+                        </label>
+                        <input type="text" name="first-name" class="input" id="first-name" maxlength="50" required>
+                    </div>
+                    <div id="middle-name-container" class="container">
+                        <label for="middle-name" class="label">
+                            Middle Name
+                        </label>
+                        <input type="text" name="middle-name" class="input" id="middle-name" maxlength="50">
+                    </div>
+                    <div id="last-name-container" class="container">
+                        <label for="last-name" class="label">
+                            Last Name
+                        </label>
+                        <input type="text" name="last-name" class="input" id="last-name" maxlength="50" required>
+                    </div>
+
+                    <div id="gender-container" class="container">
+                        <label for="gender" class="label">
+                            Gender
+                        </label>
+                        <label for="male" class="label-many">
+                            <input type="radio" name="gender" class="input-many" id="male" value="Male" required>
+                            Male
+                        </label>
+                        <label for="female" class="label-many">
+                            <input type="radio" name="gender" class="input-many" id="female" value="Female">
+                            Female
+                        </label>
+                        <label for="others" class="label-many">
+                            <input type="radio" name="gender" class="input-many" id="others" value="Others">
+                            Others
+                        </label>
+                    </div>
+
+                    <div id="personal" class="double-container">
+                        <div id="age-container" class="container">
+                            <label for="age" class="label">
+                                Age
+                            </label>
+                            <input type="number" name="age" class="input" id="age" min="18" max="60" required>
+                        </div>
+                        <div id="dob-container" class="container">
+                            <label for="dob" class="label">
+                                Date of Birth
+                            </label>
+                            <input type="date" name="dob" class="input" id="dob" required>
+                        </div>
+                    </div>
+
+                    <div id="contact" class="double-container">
+                        <div id="email-container" class="container">
+                            <label for="email" class="label">
+                                Email
+                            </label>
+                            <input type="email" name="email" class="input" id="email" maxlength="30" required>
+                        </div>
+                        <div id="phone-container" class="container">
+                            <label for="phone" class="label">
+                                Phone
+                            </label>
+                            <input type="tel" name="phone" class="input" id="phone" maxlength="10" required>
+                        </div>
+                    </div>
+
+                    <div id="address-container" class="container">
+                        <label for="address" class="label">
+                            Address
+                        </label>
+                        <textarea name="address" class="input" id="address" cols="50" rows="4" placeholder="Type here..." required></textarea>
+                    </div>
+
+                    <div id="regional-location" class="double-container">
+                        <div id="city-container" class="container">
+                            <label for="city" class="label">
+                                City
+                            </label>
+                            <input type="text" name="city" class="input" id="city" maxlength="30" required>
+                        </div>
+                        <div id="pincode-container" class="container">
+                            <label for="pincode" class="label">
+                                Pincode
+                            </label>
+                            <input type="tel" name="pincode" class="input" id="pincode" maxlength="6" required>
+                        </div>
+                    </div>
+
+                    <div id="national-location" class="double-container">
+                        <div id="state-container" class="container">
+                            <label for="state" class="label">
+                                State
+                            </label>
+                            <input type="text" name="state" class="input" id="state" maxlength="30" required>
+                        </div>
+                        <div id="country-container" class="container">
+                            <label for="country" class="label">
+                                Country
+                            </label>
+                            <input type="text" name="country" class="input" id="country" maxlength="30" required>
+                        </div>
+                    </div>
+
+                    <div id="identity" class="double-container">
+                        <div id="passport-photo-container" class="container">
+                            <label for="passport-photo" class="label">
+                                Upload your Passport photo
+                            </label>
+                            <input type="file" name="passport-photo" class="input" id="passport-photo" accept="image/*" required>
+                        </div>
+                        <div id="aadhaar-container" class="container">
+                            <label for="aadhaar" class="label">
+                                Upload your Aadhaar card
+                            </label>
+                            <input type="file" name="aadhaar" class="input" id="aadhaar" accept="image/*, .pdf" required>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <a href="../FormFamilyDetails/family-details.html" class="submit-url">
+                    <button type="submit" class="submit-button">
+                        Go to next section
+                    </button>
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>

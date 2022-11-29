@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style_educational.css">
+</head>
+<body>
+    <div class="main">
+
+        <div class="info-section">
+            <div class="background-container">
+                <img src="./assets/images/Form-Background.jpg" alt="Background Image" class="background">
+            </div>
+
+            <div class="company-details">
+
+                <h1 class="company-name">
+                    Hello World
+                    <br>
+                    <span>
+                        Solutions
+                    </span>
+                </h1>
+
+                <h3 class="company-tag">
+                    We are the most Professional
+                    <br> 
+                    <span>Business Solutions</span>
+                </h3>
+
+                <div class="buttons">
+                    <a href="https://in.linkedin.com/" target="_blank" class="url" id="linkedin-url">
+                        <img src="./assets/icons/LinkedIn-Logo-White.png" alt="LinkedIn Logo">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="url" id="facebook-url">
+                        <img src="./assets/icons/Facebook-Logo-White.png" alt="Facebook Logo">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="url" id="twitter-url">
+                        <img src="./assets/icons/Twitter-Logo-White.png" alt="Twitter Logo">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="url" id="instagram-url">
+                        <img src="./assets/icons/Instagram-Logo-White.png" alt="Instagram Logo">
+                    </a>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <div class="details-section">
+
+            <nav class="navigation">
+                <ul class="illustrations">
+                    <li class="icon" id="personal">
+                        <a href="../FormPersonalDetails/personal-details.html">
+                            <img src="./assets/icons/person-icon.jpg" alt="Personal Details">
+                        </a>
+                    </li>
+                    <li class="icon" id="family">
+                        <a href="../FormFamilyDetails/family-details.html">
+                            <img src="./assets/icons/family-icon.jpg" alt="Family Details">
+                        </a>
+                    </li>
+                    <li class="icon" id="educational">
+                        <a href="#">
+                            <img src="./assets/icons/education-icon.jpg" alt="Educational Details">
+                        </a>
+                    </li>
+                    <li class="icon" id="employment">
+                        <a href="../FormEmploymentDetails/employment-details.html">
+                            <img src="./assets/icons/employee-icon.jpg" alt="Employment Details">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <li class="list-items" id="personal">
+                        <a href="../FormPersonalDetails/personal-details.html">
+                            Personal Details
+                        </a>
+                    </li>
+                    <li class="list-items" id="family">
+                        <a href="../FormFamilyDetails/family-details.html">
+                            Family Details
+                        </a>
+                    </li>
+                    <li class="list-items" id="educational">
+                        <a href="#">
+                            Educational Details
+                        </a>
+                    </li>
+                    <li class="list-items" id="employment">
+                        <a href="../FormEmploymentDetails/employment-details.html">
+                            Employment Details
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form action="../FormEmploymentDetails/employment-details.html" method="#" class="form-container">
+
+                <fieldset id="higher-education" class="fieldset">
+
+                    <legend>
+                        Undergraduation
+                    </legend>
+
+                    <div id="university-container" class="container">
+                        <label for="university" class="label">
+                             University 
+                        </label>
+                        <input type="text" name="university" class="input" id="university" maxlength="50" required>
+                    </div>
+
+                    <div id="specialization-container" class="container">
+                        <label for="specialization" class="label">
+                            Specialization
+                        </label>
+                        <input type="text" name="specialization" class="input" id="specialization" maxlength="50" required>
+                    </div>
+
+                    <div id="record1" class="double-container">
+                        <div id="grade-container" class="container">
+                            <label for="grade" class="label">
+                                Grade Point
+                            </label>
+                            <input type="number" name="grade" class="input" id="grade" min="0" max="10" step="0.01" required>
+                        </div>
+                        <div id="passing-year1-container" class="container">
+                            <label for="passing-year1" class="label">
+                                Year of passing
+                            </label>
+                            <input type="month" name="passing-year1" class="input" id="passing-year1" required>
+                        </div>
+                    </div>
+
+                    <div id="marksheet1-container" class="container">
+                        <label for="marksheet1" class="label">
+                            Upload your marksheet
+                        </label>
+                        <input type="file" name="marksheet1" class="input" id="marksheet1" accept=".pdf,.doc" required>
+                    </div>
+
+                </fieldset>
+
+                <fieldset id="secondary-education" class="fieldset">
+
+                    <legend>
+                         Senior Secondary Education 
+                    </legend>
+
+                    <div id="school-container" class="container">
+                        <label for="school" class="label">
+                            Institution
+                        </label>
+                        <input type="text" name="school" class="input" id="school" maxlength="50" required>
+                    </div>
+
+                    <div id="board-container" class="container">
+                        <label for="board" class="label">
+                            Board of Education
+                        </label>
+                        <select name="board" class="input" id="board" required>
+                            <option value="" class="option">---select---</option>
+                            <option value="CBSE" class="option">Central Board of Secondary Education</option>
+                            <option value="ICSE" class="option">Indian Certificate of Secondary Education</option>
+                            <option value="State" class="option">State Government Board of Education</option>
+                            <option value="Others" class="option">Other Education Boards</option>
+                        </select>
+                    </div>
+
+                    <div id="record2" class="double-container">
+                        <div id="percentage-container" class="container">
+                            <label for="percentage" class="label">
+                                Percentage
+                            </label>
+                            <input type="number" name="percentage" class="input" id="percentage" min="0" max="100" step="0.01" required>
+                        </div>
+                        <div id="passing-year2-container" class="container">
+                            <label for="passing-year2" class="label">
+                                Year of passing
+                            </label>
+                            <input type="month" name="passing-year2" class="input" id="passing-year2" required>
+                        </div>
+                    </div>
+
+                    <div id="marksheet2-container" class="container">
+                        <label for="marksheet2" class="label">
+                            Upload your marksheet
+                        </label>
+                        <input type="file" name="marksheet2" class="input" id="marksheet2" accept=".pdf,.doc" required>
+                    </div>
+
+                </fieldset>
+
+                <a href="../FormEmploymentDetails/employment-details.html" class="submit-url">
+                    <button type="submit" class="submit-button">
+                        Go to next section
+                    </button>
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>

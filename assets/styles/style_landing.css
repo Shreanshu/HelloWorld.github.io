@@ -1,0 +1,302 @@
+:root {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1vw;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 3% 0;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.main .background-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main .background-container .background {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.main .header {
+    width: 100%;
+    height: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main .header .company-title {
+    width: 50%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.main .header .company-title .company-name {
+    margin: 5% 0 0;
+    font-size: 6em;
+    font-weight: 900;
+}
+
+.main .header .company-title .animation {
+    width: 88%;
+    margin: 0 auto;
+    font-size: 7.5em;
+    font-weight: 900;
+    color: rgb(65, 65, 255);
+    border-right: 5px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 4s steps(40, end), blink-cursor 0.8s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 88%;
+    }
+}
+
+@keyframes blink-cursor {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+.main .header .company-title .buttons {
+    width: 40%;
+    height: 10%;
+    margin: 23% auto 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .header .company-title .buttons .url {
+    width: 14%;
+    height: 100%;
+}
+
+.main .header .company-title .buttons .url img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.main .header .company-title .buttons .url img:hover {
+    background-color: rgb(65, 65, 255);
+}
+
+.main .header .company-description {
+    width: 45%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main .header .company-description .company-tag {
+    margin-top: 1%;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.main .header .company-description .company-tag span {
+    font-size: 1.6em;
+    /* color: rgb(65, 65, 255); */
+}
+
+.main .header .company-description .description {
+    width: 58%;
+    margin: auto;
+    text-align: justify;
+}
+
+.main .header .company-description .link {
+    width: 58%;
+    margin: 10% 0 0;
+}
+
+.main .header .company-description .link .register {
+    width: 100%;
+    padding: 2% 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6em;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.main .header .company-description .link .register:hover {
+    background-color: rgb(65, 65, 255);
+    color: white;
+}
+
+.main .header .company-description .link .register:active {
+    transform: scale(0.98);
+}
+
+
+
+@media screen and (min-width: 540px) and (max-width: 959px) {
+
+    .main .background-container .background {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -70%;
+    }
+
+    .main .header {
+        width: 100%;
+        height: 80%;
+        margin: 3% auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .main .header .company-title {
+        width: 80%;
+        font-size: 1.5em;
+    }
+
+    .main .header .company-title .animation {
+        width: 83%;
+        animation: typing 4s steps(40, end), blink-cursor 0.8s step-end infinite;
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 83%;
+        }
+    }
+
+    .main .header .company-title .buttons {
+        width: 65%;
+        height: 10%;
+        margin: 10% auto 20%;
+    }
+
+    .main .header .company-description {
+        width: 80%;
+        font-size: 2em;
+    }
+
+    .main .header .company-description .description {
+        width: 68%;
+    }
+    
+    .main .header .company-description .link {
+        width: 68%;
+    }
+
+    .main .header .company-description .link .register {
+        padding: 3% 0;
+        font-size: 2em;
+    }
+}
+
+
+
+@media screen and (max-width: 539px) {
+
+    .main .background-container .background {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -140%;
+    }
+
+    .main .header {
+        width: 100%;
+        height: 80%;
+        margin: 10% auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .main .header .company-title {
+        width: 80%;
+        font-size: 1.5em;
+    }
+
+    .main .header .company-title .animation {
+        width: 83%;
+        animation: typing 4s steps(40, end), blink-cursor 0.8s step-end infinite;
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 83%;
+        }
+    }
+
+    .main .header .company-title .buttons {
+        width: 80%;
+        height: 10%;
+        margin: 15% auto 25%;
+    }
+
+    .main .header .company-description {
+        width: 80%;
+        margin-top: 5%;
+        font-size: 2.5em;
+    }
+
+    .main .header .company-description .description {
+        width: 84%;
+        margin-top: 3%;
+    }
+    
+    .main .header .company-description .link {
+        width: 84%;
+    }
+
+    .main .header .company-description .link .register {
+        padding: 3% 0;
+        font-size: 2.5em;
+    }
+}
